@@ -7,13 +7,13 @@ function factorial(n) {
 }
 
 function e(n) {
-    if(n === 0) {
-        return 1;
-    } 
-
-    else {
-        return 1.0 / factorial(n) + e(n - 1);
-    } 
+  let e = 1; 
+  let a;
+  for (let i = 1; i <= n; i++) {
+      a = 1.0 / factorial(i);
+      e += a; 
+  } 
+  return e;
 }
 
 //n = 4;
