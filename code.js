@@ -1,9 +1,17 @@
-function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
-}
 
 function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+  let e = 1; 
+  factorial = 1;
+  let a;
+  for (let i = 1; i <= n; i++) { 
+      factorial *= i;
+      a = 1.0 / factorial;
+      e += a; 
+  } 
+  return e;
 }
+
+//n = 4;
+//result = e(n);
+//console.log(result);
+
