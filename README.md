@@ -19,4 +19,4 @@ but you need to go beyond that.
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
 
-Answer: The worst-case time complexity for my algorithm is $\Theta(n^2)$.
+Answer: The worst-case time complexity for my algorithm is $\Theta(n)$.
