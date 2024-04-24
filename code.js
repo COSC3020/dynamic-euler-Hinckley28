@@ -1,16 +1,11 @@
-function factorial(n) {
-    let a = 1;
-    for (let i = 2; i <= n; i++) {
-        a *= i;
-    }
-    return a;
-}
 
 function e(n) {
   let e = 1; 
+  factorial = 1;
   let a;
-  for (let i = 1; i <= n; i++) {
-      a = 1.0 / factorial(i);
+  for (let i = 1; i <= n; i++) { 
+      factorial *= i;
+      a = 1.0 / factorial;
       e += a; 
   } 
   return e;
